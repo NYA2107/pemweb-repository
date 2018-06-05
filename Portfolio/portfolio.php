@@ -6,7 +6,7 @@
     header('Location: index.php');
   }
 
-  $query = new Query($_SESSION['imageId']);
+  $query = new Query($_SESSION['imageid']);
   $comments = $query->getImgComments();
  ?>
 
@@ -30,22 +30,22 @@
             foreach ($comments as $key => $com) {
               echo '<div class="comment-card">';
               echo  '<div class="comment-name">';
-              echo    '<h4>'.$com->$name.'</h4>';
+              echo    '<h4>'.$com->name.'</h4>';
               echo  '</div>';
               echo '<div class="comment-text">';
-              echo  '<p>'.$com->$comment.'</p>';
+              echo  '<p>'.$com->comment.'</p>';
               echo '</div>';
               echo '</div>';
             }
            ?>
-          <div class="comment-card">
+          <!-- <div class="comment-card">
             <div class="comment-name">
               <h4>Your Name</h4>
             </div>
             <div class="comment-text">
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
             </div>
-          </div>
+          </div> -->
           <!-- comment here -->
 
         </div>
