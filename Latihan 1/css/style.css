@@ -1,0 +1,48 @@
+body{
+	margin : 0px;
+	display: flex;
+	justify-content: center;
+	color: white;
+}
+
+#main-container{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 784px;
+	flex-wrap: wrap;
+}
+
+#header{
+	width: 784px;
+	height: 200px;
+	background-color: black;
+}
+
+#article-container{
+	display: flex;
+	justify-content: center;
+	align-items: stretch;
+	flex-wrap: wrap;
+	width: 784px;
+	height: auto;
+}
+
+#kolom1{
+	width: 200px;
+	height: inherit;
+	background-color: blue;
+}
+
+#kolom2{
+	width: 584px;
+	height: inherit;
+	background-color: green;
+}
+
+#footer{
+	width : 784px;
+	height: 100px;
+	background-color: red;
+}
+

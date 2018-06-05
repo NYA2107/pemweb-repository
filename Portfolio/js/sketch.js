@@ -1,22 +1,16 @@
-
-const p1 = new Picture('#pic-show', 'img/1.jpg');
-const p2 = new Picture('#pic-show', 'img/2.jpg');
-const p3 = new Picture('#pic-show', 'img/3.jpg');
-const p4 = new Picture('#pic-show', 'img/4.jpg');
 const profile = new Picture('#pic-show', 'img/profile.jpg');
+let list = new Array();
 
-const change1 = () =>{
-	p1.change();
+
+
+$( document ).ready(ready);
+
+function ready(){
+	for(let i = 1; i < 5; i++){
+		list[i] = new Picture('#pic-show', 'img/'+i+'.jpg');
+	}
 }
-const change2 = () =>{
-	p2.change();
-}
-const change3 = () =>{
-	p3.change();
-}
-const change4 = () =>{
-	p4.change();
-}
-const changeProfile = () =>{
-	profile.change();
+
+function clicked(id) {
+	window.location.href = "bridge.php?img_id=" + id;
 }
